@@ -1,6 +1,6 @@
 Licencia MIT
 
-Derechos de autor (c) 2021 BYJU'S FutureSchool
+Derechos de autor (c) 2017 tonikolaba
 
 El permiso se otorga, sin costo, a cualquier persona que obtenga una copia 
 de este programa y archivos asociados (el "software") , para lidiar con

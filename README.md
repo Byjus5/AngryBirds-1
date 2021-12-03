@@ -1,10 +1,10 @@
 # AngryBirds
 -------------------------------------------------
-Angry Birds :anger: :bird: Game using JavaScript. 
+Angry Birds :anger: :bird: Juego usando JavaScript. 
 
-# Contributors
+# Contribuyentes
 
-#### Authors:
+#### Autores:
 
 *  ![Mahdi7s](https://github.com/Mahdi7s)
 

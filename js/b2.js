@@ -1,4 +1,4 @@
-// Author: www.mahdi7s.com
+
 
 var MathH = {
     clamp: function (num, min, max) {
@@ -31,7 +31,7 @@ var GameObjectRoll = {
     Wood: "Wood!",
     Bird: "BIRD!"
 };
-Object.freeze(GameObjectRoll); // So it's like an enum
+Object.freeze(GameObjectRoll); // entonces es como enumeración
 
 var b2Body = Box2D.Dynamics.b2Body,
     b2BodyDef = Box2D.Dynamics.b2BodyDef,
@@ -134,7 +134,7 @@ var b2 = (function () {
             bBData = bodyB.GetUserData();
 
         var imp0 = impulse.normalImpulses[0];
-        if (imp0 <= 2) return; // prevent little impulses
+        if (imp0 <= 2) return; // prevenir pequeños impulsos
 
         var damage = function (bodyData) {
             if (!bodyData || (bodyData.getHealth() == bodyData.getFullHealth() && imp0 < 12)) return;
@@ -213,7 +213,7 @@ var b2 = (function () {
             bodies.push(body);
         },
         simulate: function () {
-            world.Step(1 / 60, // fixed time step
+            world.Step(1 / 60, // paso de tiempo fijo
             10, // velocity iterations
             10); // position iterations
 

@@ -1,4 +1,4 @@
-// Author: www.mahdi7s.com
+
 
 var CMenu = cc.Sprite.extend({
     defaultScale: 0.8,
@@ -254,7 +254,7 @@ var GameLayer = cc.Layer.extend({
         });
         this.slingRubber3 = null;
 
-        // --------- Top Menu ! ---------
+        // --------- Menú principal ! ---------
 
         var margin = 25,
             backMenu = new CMenu(this.getTexture("menu_back"));
@@ -273,7 +273,7 @@ var GameLayer = cc.Layer.extend({
         this.addChild(refreshMenu);
         this.menus.push(refreshMenu);
 
-        // --------- My Score ! ---------
+        // --------- Mi puntuación ! ---------
 
         var scoreLabel = cc.LabelTTF.create("0", "fantasy", 20, cc.size(0, 0), cc.TEXT_ALIGNMENT_LEFT);
         scoreLabel.setPosition(cc.p(winSize.width - 80, winSize.height));
@@ -286,7 +286,7 @@ var GameLayer = cc.Layer.extend({
         });
         this.addChild(scoreLabel, 5);
 
-        // --------- Setup Sling's Bomb ! ---------
+        // --------- Configurar bomba de resortera ! ---------
 
         var action = cc.Spawn.create(cc.RotateBy.create(1.5, 360), cc.JumpTo.create(1.5, this.birdStartPos, 100, 1));
         this.birdSprite.runAction(action);
@@ -410,7 +410,7 @@ var GameLayer = cc.Layer.extend({
 });
 
 
-//--------------------- Scene ---------------------
+//--------------------- Escenario ---------------------
 
 var GameScene = cc.Scene.extend({
     onEnter: function () {
